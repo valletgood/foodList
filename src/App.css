@@ -1,38 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
+body {
+  font-family: 'Yeon Sung', cursive;
+}
+
 .App {
-  text-align: center;
+  padding-left: 20px;
+  width: 50%;
+  background-color: white;
+  margin: auto;
+  margin-top: 20px;
+  height: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* MyButton */
+.MyButton {
+  font-family: 'Yeon Sung';
+  border: none;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.5vw;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.MyButton_positive {
+  background-color: #64c964;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.MyButton_negative {
+  background-color: #fd565f;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MyButton_default {
+  background-color: #ececec;
 }
+
+/* MyHeader */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.8vw;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+header .head_btn_left button {
+  justify-content: start;
+}
+
+header .head_btn_right button {
+  justify-content: end;
+}
+
+/* home */
+
+.home .countryBtn {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 20px;
+width: 100%;
+}
+
+.home .countryBtn button {
+  cursor: pointer;
+}
+
+.home .countryBtn .Korea {
+  font-family: 'Yeon Sung';
+  font-size: 1.5vw;
+  border: none;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}
+
+.home .countryBtn .Japan {
+  font-family: 'Yeon Sung';
+  font-size: 1.5vw;
+  border: none;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}
+
+.home .countryBtn .America {
+  font-family: 'Yeon Sung';
+  font-size: 1.5vw;
+  border: none;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}
+
+.home .countryBtn .China {
+  font-family: 'Yeon Sung';
+  font-size: 1.5vw;
+  border: none;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}
+
+.home .countryBtn .Coffee {
+  font-family: 'Yeon Sung';
+  font-size: 1.5vw;
+  border: none;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}
+
+
+.home .dataList {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 100%;
+
+}
+
+.home .dataList div{
+  margin-bottom: 10px;
+}
+
+/* ItemList */
+
+.ItemList p {
+  font-size: 2vw;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 3fr 3fr 1fr;
+}
+
+.ItemList p span {
+  cursor: pointer;
+}
+
+.ItemList p img {
+  width: 25%;
+  height: 100%;
+}
+
+/* New */
+
+.new {
+  font-size: 1.5vw;
+  width: 100%;
+}
+
+.new * {
+  font-family: 'Yeon Sung';
+}
+
+.new .input_title{
+  padding: 10px;
+  width: 40%;
+  background-color: #ececec;
+  border: none;
+}
+
+.new .input_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new .input_box .input_food {
+  border: none;
+  background-color: #ececec;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+
+.new .input_area {
+  padding: 10px;
+  width: 40%;
+  background-color: #ececec;
+  border: none;
+  font-size: 1.5vw;
+}
+
+.new .input_title {
+  font-size: 1.5vw;
+}
+
+.new textarea {
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  background-color: #ececec;
+  border: none;
+  font-size: 1.8vw;
+}
+
+.new .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+/* Edit */
+  .Edit {
+    font-size: 1.5vw;
+    width: 100%;
+  }
+  
+  .Edit * {
+    font-family: 'Yeon Sung';
+  }
+  
+  .Edit .input_title{
+    padding: 10px;
+    width: 40%;
+    background-color: #ececec;
+    border: none;
+  }
+  
+  .Edit .input_box {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Edit .input_box .input_food {
+    border: none;
+    background-color: #ececec;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .Edit .input_area {
+    padding: 10px;
+    width: 40%;
+    background-color: #ececec;
+    border: none;
+    font-size: 1.5vw;
+  }
+  
+  .Edit .input_title {
+    font-size: 1.5vw;
+  }
+  
+  .Edit textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    background-color: #ececec;
+    border: none;
+    font-size: 1.8vw;
+  }
+  
+  .Edit .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* Item */
+  .Item .detail_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 2vw;
+    line-height: 4vw;
+  }
+
+  .Item .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .Item .item_title {
+    background-color: #ececec;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5vw;
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .Item .item_area {
+    background-color: #ececec;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5vw;
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .Item .item_food{
+    background-color: #ececec;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5vw;
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .Item .item_content {
+    background-color: #ececec;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5vw;
+    width: 50%;
+    height: 150px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    overflow: scroll;
+    cursor: pointer;
+  }
