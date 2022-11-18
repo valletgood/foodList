@@ -59,9 +59,8 @@ const Item = () => {
                     {itemFood}
                 </div>
                 링크를 남겨주세요!
-                <div className='item_content' onClick={() => window.open(`${itemContent}`, '_blank')}>
-                    {itemContent}
-                </div>
+                <textarea className='item_content' value={itemContent} onClick={() => window.open(`${itemContent}`, '_blank')}>
+                </textarea>
             </div>
             <div className='footer'>
                 <MyButton text={'뒤로가기'} onClick={() => navigate(-1)} />

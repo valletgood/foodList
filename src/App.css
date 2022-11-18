@@ -2,15 +2,35 @@
 
 body {
   font-family: 'Yeon Sung', cursive;
+  min-height: 100vh;
+  background-color: #f6f6f6;
+  width: 100%;
 }
 
+@media (min-width : 650px){
+  .App{
+    width: 640px;
+  }
+}
+
+@media (max-width : 650px){
+  .App{
+    width: 90vw;
+  }
+}
+
+
 .App {
-  padding-left: 20px;
-  width: 50%;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
   background-color: white;
   margin: auto;
-  margin-top: 20px;
-  height: 800px;
+  min-height: 100vh;
+}
+
+#root {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* MyButton */
@@ -20,9 +40,9 @@ body {
   border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 1.5vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -46,10 +66,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 2.8vw;
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-size: 25px;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
   border-bottom: 1px solid gray;
 }
 
@@ -67,7 +86,7 @@ header .head_btn_right button {
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding-top: 20px;
+padding-top: 1.5vw;
 width: 100%;
 }
 
@@ -77,78 +96,63 @@ width: 100%;
 
 .home .countryBtn .Korea {
   font-family: 'Yeon Sung';
-  font-size: 1.5vw;
+  font-size: 20px;
   border: none;
   border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .home .countryBtn .Japan {
   font-family: 'Yeon Sung';
-  font-size: 1.5vw;
+  font-size: 20px;
   border: none;
   border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .home .countryBtn .America {
   font-family: 'Yeon Sung';
-  font-size: 1.5vw;
+  font-size: 20px;
   border: none;
   border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .home .countryBtn .China {
   font-family: 'Yeon Sung';
-  font-size: 1.5vw;
+  font-size: 20px;
   border: none;
   border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .home .countryBtn .Coffee {
   font-family: 'Yeon Sung';
-  font-size: 1.5vw;
+  font-size: 20px;
   border: none;
   border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-}
-
-
-.home .dataList {
   padding-left: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-top: 20px;
-  width: 100%;
-
-}
-
-.home .dataList div{
-  margin-bottom: 10px;
+  padding-right: 20px;
 }
 
 /* ItemList */
 
 .ItemList p {
-  font-size: 2vw;
+  font-size: 20px;
   align-items: center;
   display: grid;
   grid-template-columns: 3fr 3fr 1fr;
@@ -166,7 +170,7 @@ width: 100%;
 /* New */
 
 .new {
-  font-size: 1.5vw;
+  font-size: 20px;
   width: 100%;
 }
 
@@ -179,6 +183,7 @@ width: 100%;
   width: 40%;
   background-color: #ececec;
   border: none;
+  font-size: 20px;
 }
 
 .new .input_box {
@@ -192,7 +197,7 @@ width: 100%;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.5vw;
+  font-size: 15px;
 }
 
 .new .input_area {
@@ -200,38 +205,35 @@ width: 100%;
   width: 40%;
   background-color: #ececec;
   border: none;
-  font-size: 1.5vw;
+  font-size: 20px;
 }
 
-.new .input_title {
-  font-size: 1.5vw;
-}
 
 .new textarea {
-  width: 100%;
-  height: 100px;
+  width: 90%;
+  height: 20vh;
   resize: vertical;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 20px;
+  overflow: scroll;
+  padding-left: 1vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  margin-top: 1vw;
   background-color: #ececec;
   border: none;
-  font-size: 1.8vw;
+  font-size: 20px;
 }
 
 .new .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
-  padding-bottom: 30px;
-  padding-bottom: 20px;
+  margin-top: 1.5vw;
+  padding-bottom: 2vw;
 }
 
 /* Edit */
   .Edit {
-    font-size: 1.5vw;
+    font-size: 20px;
     width: 100%;
   }
   
@@ -240,7 +242,7 @@ width: 100%;
   }
   
   .Edit .input_title{
-    padding: 10px;
+    padding: 1vw;
     width: 40%;
     background-color: #ececec;
     border: none;
@@ -254,43 +256,42 @@ width: 100%;
   .Edit .input_box .input_food {
     border: none;
     background-color: #ececec;
-    padding: 10px;
+    padding: 1vw;
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
   }
   
   .Edit .input_area {
-    padding: 10px;
+    padding: 1vw;
     width: 40%;
     background-color: #ececec;
     border: none;
-    font-size: 1.5vw;
+    font-size: 20px;
   }
   
   .Edit .input_title {
-    font-size: 1.5vw;
+    font-size: 20px;
   }
   
   .Edit textarea {
-    width: 100%;
+    width: 90%;
     height: 100px;
     resize: vertical;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    overflow: scroll;
+    padding: 20px;
     margin-top: 20px;
     background-color: #ececec;
     border: none;
-    font-size: 1.8vw;
+    font-size: 20px;
   }
   
   .Edit .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 1.5vw;
+    padding-bottom: 1.5vw;
   }
 
   /* Item */
@@ -299,9 +300,9 @@ width: 100%;
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid gray;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 2vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    font-size: 20px;
     line-height: 4vw;
   }
 
@@ -310,49 +311,63 @@ width: 100%;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 1.5vw;
   }
 
   .Item .item_title {
     background-color: #ececec;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 1.5vw;
+    font-size: 20px;
     width: 30%;
     border-radius: 5px;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .Item .item_area {
     background-color: #ececec;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 1.5vw;
+    font-size: 20px;
     width: 30%;
     border-radius: 5px;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .Item .item_food{
     background-color: #ececec;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 1.5vw;
+    font-size: 20px;
     width: 30%;
     border-radius: 5px;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .Item .item_content {
     background-color: #ececec;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 1.5vw;
+    margin-top: 10px;
+    font-size: 20px;
     width: 50%;
-    height: 150px;
+    height: 120px;
     border-radius: 5px;
     align-items: center;
     text-align: center;
     overflow: scroll;
     cursor: pointer;
+    font-family: 'Yeon Sung';
   }
