@@ -1,5 +1,8 @@
+# 만들게 된 이유
+가보고 싶은 식당이나 카페가 생겼을 때 링크를 첨부하여 저장 나중에 카테고리별로 찾기 위해 만들었습니다.
+
 # Page URL
-https://valletgood-react-project.firebaseapp.com/
+https://valletgood-react-project.web.app/
 
 # Getting Started with Create React App
 
